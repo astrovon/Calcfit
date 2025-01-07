@@ -1,0 +1,35 @@
+# Logs
+logs/
+*.log
+
+# Environment files (if applicable)
+.env
+.env.local
+.env.*.local
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE/editor settings
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Cache files
+.cache/
+*.tmp
+
+# Git-specific
+.git/
+.gitignore
+
+# Replit files
+.replit
+config.yaml
+
+# OS files
+*.bak
+*.old
+*.orig
