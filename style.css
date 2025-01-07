@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Rubik Vinyl', sans-serif;
+    background-color: #f4f4f4; 
+    color: #333;
+}
+
+/* Header Section */
+header {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center elements horizontally */
+    justify-content: center; /* Center elements vertically */
+    padding: 10px;
+    background-color: #81C784;
+    position: fixed; /* Fix the header to the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+/* Logo Styling */
+header .logo {
+    font-size: 24px;
+    color: white;
+    text-transform: lowercase;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: left; /* Center the logo text */
+    margin-bottom: 10px; /* Add space below the logo */
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: center; /* Center nav links */
+    gap: 20px; /* Add space between nav items */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index:1000;
+    left: 0;
+    height: 60px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(135deg, #205072, #329D9C, #56C596, #7BE495, #CFF4D2);/* Background color */
+    color: white;
+    padding: 50px 10%;
+    margin-top: 80px;
+}
+
+.hero-text h5 {
+    font-size: 22px;
+   /* margin-bottom: 20px; */
+    font-weight: 400;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+   /* margin-bottom: 20px; */
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.hero-text p {
+    font-size: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+    color: black; 
+}
+
+/* Hover Effect for Navigation */
+nav a:hover {
+    color: #333;
+    text-decoration: underline;
+}
+
+/* Navigation links styling */
+        nav ul li {
+            list-style-type: none;
+            background-color: #81C784;
+            padding: 0px;
+            margin: 0px;
+            overflow: hidden;
+        }
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        padding: 15px;
+        display: block;
+        text-align: center;
+    }
+    nav li{
+        flow: left;
+        display: inline-block;    }
+
+    /* Hover effect for links */
+    nav ul li a:hover {
+        background-color: #4CAF50;
+    }
+}
+    /* Styling for the hero section on smaller screens */
+    .hero {
+        padding: 30px 5%;
+    }
+
+    .hero-text h1 {
+        font-size: 36px;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+    }
+}
+nav ul li a:hover {
+    background-color: #81C784;
+    border-radius: 4px;
+}
+
+/* Apply Rubik Bubbles font to "CALCFIT" */
+.hero h1 {
+    font-family: 'Rubik Bubbles', sans-serif; /* Apply Rubik Bubbles font */
+    font-size: 48px;
+    font-weight: 400; /* Regular weight for Rubik Bubbles */
+    color: #ffffff;
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slideInColorChange 2s ease-out forwards;
+}
+
+/* Keyframes for slide-in with color change animation */
+@keyframes slideInColorChange {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+        color: #333;
+    }
+    80% {
+        opacity: 1;
+        transform: translateX(0);
+color: #333;
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+        color: #fff;
+    }
+}
+/* Apply neon glow effect to the text */
+.hero h5 {
+    font-family: 'Rubik Vinyl', sans-serif;
+    font-size: 24px; /* Adjusted smaller font size */
+    font-weight: bold;
+    color: #383838;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-align: center;
+    position: relative;
+    animation: neonGlow 1.5s ease-in-out infinite alternate;
+}
+
+/* Neon Glow Animation */
+@keyframes neonGlow {
+    0% {
+        text-shadow: 0 0 5px #808080, 0 0 10px #808080, 0 0 15px #808080, 0 0 20px #808080, 0 0 25px #808080;
+        transform: scale(1);
+    }
+    50% {
+        text-shadow: 0 0 10px #A4C8E1, 0 0 15px #808080, 0 0 20px #3A5E8C, 0 0 25px #3A5E8C, 0 0 30px #A4C8E1;
+        transform: scale(1.05);
+    }
+    100% {
+        text-shadow: 0 0 15px #4F4F4F, 0 0 20px #A4C8E1, 0 0 25px #4F4F4F, 0 0 30px #808080, 0 0 35px #4C4c4c;
+        transform: scale(1);
+    }
+}
+
+/* Slide-in effect for menu items */
+@keyframes slideIn {
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .navbar {
+        display: block;
+        align-items: right;
+    } 
+}
+@media (max-width: 600px) {
+ .navbar {
+     display: block;
+ }
+}
+@media (max-width: 500px) {
+    .navbar {
+        display: block;
+    }
+}
+@media (max-width: 400px) {
+    .navbar {
+        display: block;
+    }
+}
